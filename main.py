@@ -3,6 +3,7 @@ from core.processor import PaymentProcessor
 from core.registry import buat_metode, daftar_plugin
 from core.utils import rupiah
 from plugins import muat_semua_plugin
+from core.utils import buat_id
  
  
 def main() -> None:
