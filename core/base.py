@@ -21,6 +21,7 @@ class PaymentMethod(ABC):
     def bayar(self, jumlah: float) -> str:
         """Proses pembayaran, lalu kembalikan ID transaksi."""
  
+        
     def proses(self, jumlah: float) -> str:
         """Template method: urutan langkah dijaga oleh kelas induk."""
         if jumlah <= 0:
