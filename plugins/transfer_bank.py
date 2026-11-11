@@ -9,6 +9,8 @@ class TransferBank(PaymentMethod):
         super().__init__(f"Transfer {bank}")
         self.saldo = saldo
         
+    def biaya_admin(self, jumlah: float) -> float:
+        return 2500
  
     def validasi(self, jumlah: float) -> bool:
         return self.saldo >= jumlah
